@@ -1,0 +1,13 @@
+{
+  "name": "defer",
+  "repo": "cstdx/defer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Simple resource cleanup macros",
+  "keywords": [
+    "gc", "defer", "garbage collector"
+  ],
+  "src": [
+    "defer.h"
+  ],
+}
