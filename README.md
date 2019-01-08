@@ -17,7 +17,7 @@ $ clib install cstdx/defer
 int main() {
     gcinit(GCDFAULT);   // allocate 2 * sizeof(void*) * GCDFAULT bytes on stack
     do {
-        if (library_init()) {
+        if (!library_init()) {
             break;
         }
         gcdefer(library_free, NULL);
@@ -55,4 +55,3 @@ int main() {
 ## License
 
 See the LICENSE file.
-
